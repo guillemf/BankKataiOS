@@ -1,6 +1,11 @@
 import SwiftUI
 import BankKataKit
 
+/// sourcery: mockable
+public protocol Console {
+    func print(_ line: String)
+}
+
 public struct BankKataUI: View {
     @State private var statements: [String]
     
