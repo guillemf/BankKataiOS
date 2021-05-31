@@ -57,6 +57,21 @@ class AccountMock: AccountProtocol {
         printStatementClosure?()
     }
 }
+class DateProviderMock: DateProviderProtocol {
+
+    //MARK: - currentDateAsString
+
+    var currentDateAsStringCallsCount = 0
+    var currentDateAsStringCalled: Bool {
+        return currentDateAsStringCallsCount > 0
+    }
+    var currentDateAsStringReturnValue: String!
+    var currentDateAsStringClosure: (() -> String)?
+    func currentDateAsString() -> String {
+        currentDateAsStringCallsCount += 1
+        return currentDateAsStringClosure.map({ $0() }) ?? currentDateAsStringReturnValue
+    }
+}
 class PrinterMock: PrinterProtocol {
 
     //MARK: - print
@@ -76,6 +91,16 @@ class PrinterMock: PrinterProtocol {
     }
 }
 class TransactionMock: TransactionProtocol {
+    var date: String {
+        get { return underlyingDate }
+        set(value) { underlyingDate = value }
+    }
+    var underlyingDate: String!
+    var amount: Int {
+        get { return underlyingAmount }
+        set(value) { underlyingAmount = value }
+    }
+    var underlyingAmount: Int!
 
 }
 class TransactionsRepositoryMock: TransactionsRepositoryProtocol {

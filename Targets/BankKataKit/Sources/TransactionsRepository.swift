@@ -1,10 +1,3 @@
-//
-// Created by Guillermo Fernandez on 28/05/2021.
-// Copyright (c) 2021 com.cokaido. All rights reserved.
-//
-
-import Foundation
-
 /// sourcery: mockable
 public protocol TransactionsRepositoryProtocol {
     func addDeposit(amount: Int)
@@ -14,21 +7,34 @@ public protocol TransactionsRepositoryProtocol {
 
 /// sourcery: mockable
 public protocol TransactionProtocol {
+    var date: String { get }
+    var amount: Int { get }
 }
 
 public class TransactionsRepository: TransactionsRepositoryProtocol {
+    private var transactions = [Transaction]()
+    private let dateProvider: DateProviderProtocol
     
-    public init() { }
+    public init(_ dateProvider: DateProviderProtocol) {
+        self.dateProvider = dateProvider
+    }
     
     public func addDeposit(amount: Int) {
-        fatalError("Method not implemented")
+        transactions.append(Transaction(date: dateProvider.currentDateAsString(),
+                                        amount: amount))
     }
     
     public func addWithdraw(amount: Int) {
-        fatalError("Method not implemented")
+        transactions.append(Transaction(date: dateProvider.currentDateAsString(),
+                                        amount: -amount))
     }
     
     public func allTransactions() -> [TransactionProtocol] {
-        fatalError("Method not implemented")
+        return self.transactions
     }
+}
+
+public struct Transaction: TransactionProtocol, Equatable {
+    public var date: String
+    public var amount: Int
 }
