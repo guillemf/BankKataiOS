@@ -31,7 +31,7 @@ public struct BankKataUI: View {
         }
     }
     
-    public func printLine(_ line: String) {
+    public func print(_ line: String) {
         self.statements.append(line)
     }
 }

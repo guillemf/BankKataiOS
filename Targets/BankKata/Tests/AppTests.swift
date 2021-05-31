@@ -6,7 +6,8 @@ import XCTest
 final class BankKataTests: XCTestCase {
     func test_print_statement_containing_all_transactions() {
         let console = ConsoleMock()
-        let account = Account()
+        let repository = TransactionsRepository()
+        let account = Account(repository)
         
         account.deposit(amount: 1000)
         account.withdraw(amount: 100)

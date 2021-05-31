@@ -15,34 +15,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BEE5552C8B206F8344BD6CA4"
-               BuildableName = "BankKataApp.app"
-               BlueprintName = "BankKataApp"
-               ReferencedContainer = "container:BankKata.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9213FF87E8F7F2D5591D2341"
-               BuildableName = "BankKataAppTests.xctest"
-               BlueprintName = "BankKataAppTests"
-               ReferencedContainer = "container:BankKata.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "025CD4A56720DFE02D0C6411"
                BuildableName = "BankKataKit.framework"
                BlueprintName = "BankKataKit"
@@ -57,9 +29,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B38717CE2C95DA193B79285"
-               BuildableName = "BankKataUI.framework"
-               BlueprintName = "BankKataUI"
+               BlueprintIdentifier = "2262F74F7437DF112F419EF6"
+               BuildableName = "BankKataKitTests.xctest"
+               BlueprintName = "BankKataKitTests"
                ReferencedContainer = "container:BankKata.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -75,9 +47,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9213FF87E8F7F2D5591D2341"
-               BuildableName = "BankKataAppTests.xctest"
-               BlueprintName = "BankKataAppTests"
+               BlueprintIdentifier = "2262F74F7437DF112F419EF6"
+               BuildableName = "BankKataKitTests.xctest"
+               BlueprintName = "BankKataKitTests"
                ReferencedContainer = "container:BankKata.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -93,16 +65,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BEE5552C8B206F8344BD6CA4"
-            BuildableName = "BankKataApp.app"
-            BlueprintName = "BankKataApp"
+            BlueprintIdentifier = "025CD4A56720DFE02D0C6411"
+            BuildableName = "BankKataKit.framework"
+            BlueprintName = "BankKataKit"
             ReferencedContainer = "container:BankKata.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -110,16 +81,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BEE5552C8B206F8344BD6CA4"
-            BuildableName = "BankKataApp.app"
-            BlueprintName = "BankKataApp"
+            BlueprintIdentifier = "025CD4A56720DFE02D0C6411"
+            BuildableName = "BankKataKit.framework"
+            BlueprintName = "BankKataKit"
             ReferencedContainer = "container:BankKata.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

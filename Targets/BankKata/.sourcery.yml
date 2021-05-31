@@ -1,5 +1,6 @@
 sources:
   - ../BankKataUI/Sources
+  - ../BankKataKit/Sources
 templates:
   - ../../.sourcery/Templates
 output:
